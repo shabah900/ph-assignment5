@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-              <!-- cdn for font awesome  -->
+  <!-- cdn for font awesome  -->
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css" type="text/css">
   <!-- cdn for daisyUI    -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -37,35 +37,33 @@
 
 <body class="font-manrope bg-white">
 
-  <main class="flex flex-col justify-center items-center bg-white ">
-    
-              <!-- section for header  -->
-<section>
-  <div class="fixed top-0 left-0 w-full h-24">
+  <!-- header section -->
+  <header class="fixed top-0 w-full left-0   pb-4  ">
+    <div class=" flex justify-between items-center w-full h-24 px-4 bg-[#F9F7F3]">
+      <!-- blog button  -->
+      <div class="flex items-center space-x-2">
 
-<div class="  flex justify-between items-center px-8 py-4 bg-[#F9F7F3] ">
-  <div class="flex items-center space-x-2">
-      
-    <button class="bg-lime-400 text-black py-2 px-4 rounded-md font-semibold">Blog</button>
+        <button id="blog-button" class="bg-lime-400 text-black py-2 px-4 rounded-md font-semibold"><a
+            href="/blog.html">Blog</a></button>
 
-  </div>
-  
-            <!-- Donate BAngladesh  -->
-    <div class="flex items-center space-x-1">
-      <img class="w-12 h-12" src="assets/logo.png" alt="">
-  <p class="text-xl font-semibold text-[#111111] pl-2">Donate Bangladesh </p>
+      </div>
+
+      <!-- Donate BAngladesh  -->
+      <div class="flex items-center space-x-1">
+        <img class="w-12 h-12" src="assets/logo.png" alt="">
+        <p class="text-xl font-semibold text-[#111111] pl-2">Donate Bangladesh </p>
+      </div>
+      <!-- donation Amount -->
+      <div class="flex items-center space-x-1">
+        <img class="w-7 h-7 mr-3" src="assets/coin.png" alt="">
+        <p id="main-initial" class="font-medium text-xl text-[#111111B3]">5500</p>
+        <p class="font-medium text-xl pl-[5px] text-[#111111B3] "> BDT</p>
+      </div>
     </div>
-    <!-- donation Amount -->
-    <div class="flex items-center space-x-1">
-      <img class="w-7 h-7 mr-3" src="assets/coin.png" alt="">
-      <p class="font-medium text-xl text-[#111111B3]">5500 BDT</p>
-    </div>
 
-</div>
-        
     <!--  donation and history button -->
-   
-    <div class=" flex justify-center  space-x-4 mb-4 mt-[20px]  " >
+
+    <div class=" flex justify-center space-x-4 mb-4 mt-[20px]">
       <button class="bg-lime-400 text-black py-3 px-6 rounded-md font-semibold">
         Donation
       </button>
@@ -73,38 +71,33 @@
         History
       </button>
     </div>
-</div>
- </section>
-<section class="overflow-y-auto pt-[100px] h-full">
-  <div class="w-[200px] h-[300px] bg-purple-400 border my-14 ">
 
-  </div>
-  <div class="w-[200px] h-[300px] bg-purple-400 border my-14 ">
 
-  </div>
-  <div class="w-[200px] h-[300px] bg-purple-400 border my-14">
+  </header>
 
-  </div>
-  <div class="w-[200px] h-[300px] bg-purple-400 border my-14">
+  <main class="overflow-y-auto pt-[190px] h-full flex flex-col justify-center items-center bg-white ">
 
-  </div>
-  <div class="w-[200px] h-[300px] bg-purple-400 border my-14">
+    <!-- section for history -->
+    <section >
+      <div
+        class="w-[1024px] mx-auto p-6 bg-white border border-[#1111111A] rounded-lg   items-center space-x-4 mb-6">
+             
+            
+      </div>
+    </section>
 
-  </div>
-</section>
-                      
   </main>
-        
+
 
   <footer class="bg-slate-100 ">
-    
-      <div class="w-full h-12">
 
-      </div>
-     
-      
+    <div class="w-full h-12">
+
+    </div>
+
+
   </footer>
+  <script src="all.js/index.js"></script>
 </body>
 
 </html>
-        

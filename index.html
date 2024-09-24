@@ -43,8 +43,8 @@
       <!-- blog button  -->
       <div class="flex items-center space-x-2">
 
-        <button onclick="goToBlogPage()" id="blog-button"
-          class="bg-lime-400 text-black py-2 px-4 rounded-md font-semibold">Blog</button>
+        <button  id="blog-button"
+          class="bg-lime-400 text-black py-2 px-4 rounded-md font-semibold"><a href="/blog.html">Blog</a></button>
 
       </div>
 
@@ -96,10 +96,22 @@
           </p>
           <input id="donate-amount-noakhali" type="text" placeholder="Write Donation Amount"
             class="w-full bg-[#FFFFFF] p-3 border border-gray-300 rounded-lg mb-4">
-          <button id="btn-donate-noakhali"
-            class="w-full bg-[#B4F461] text-black py-3 rounded-lg  text-xl font-semibold ">
-            Donate Now
-          </button>
+            <button id="btn-donate-noakhali"  onclick="my_modal_4.showModal()" class="w-full bg-[#B4F461] text-black py-3 rounded-lg  text-xl font-semibold ">
+              Donate Now
+            </button>
+            <dialog id="my_modal_4" class="modal">
+              <div class="modal-box w-11/12 max-w-5xl">
+                <h3 class="text-lg font-bold">Hello!</h3>
+                <p class="py-4">Click the button below to close</p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button, it will close the modal -->
+                    <button class="btn">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          
         </div>
       </div>
       <!-- feni card  -->
@@ -121,9 +133,21 @@
           </p>
           <input id="donate-amount" type="text" placeholder="Write Donation Amount"
             class="w-full bg-[#FFFFFF] p-3 border border-gray-300 rounded-lg mb-4">
-          <button id="btn-donate-feni" class="w-full bg-[#B4F461] text-black py-3 rounded-lg  text-xl font-semibold ">
-            Donate Now
-          </button>
+            <button id="btn-donate-feni"  onclick="my_modal_4.showModal()" class="w-full bg-[#B4F461] text-black py-3 rounded-lg  text-xl font-semibold ">
+              Donate Now
+            </button>
+            <dialog id="my_modal_4" class="modal">
+              <div class="modal-box w-11/12 max-w-5xl bg-violet-300">
+                <h3 class="text-3xl font-extrabold text-white text-center">Congratulations !!</h3>
+                <p class="text-2xl font-extrabold text-white text-center py-4">Your Donation Process is Successfully Done. </p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- close the modal -->
+                    <button class="w-14 h-9 border border-black rounded-md bg-violet-400 text-white">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
         </div>
       </div>
       <!-- quota movement  -->
@@ -147,21 +171,21 @@
           <input id="donate-amount-quota" type="text" placeholder="Write Donation Amount"
             class="w-full bg-[#FFFFFF] p-3 border border-gray-300 rounded-lg mb-4">
 
-          <button id="btn-donate-quota"  onclick="my_modal_4.showModal()" class="w-full bg-[#B4F461] text-black py-3 rounded-lg  text-xl font-semibold ">
-            Donate Now
-          </button>
-          <dialog id="my_modal_4" class="modal">
-            <div class="modal-box w-11/12 max-w-5xl bg-violet-300">
-              <h3 class="text-3xl font-extrabold text-white text-center">Congratulations !!</h3>
-              <p class="text-2xl font-extrabold text-white text-center py-4">Your Donation Process is Successfully Done. </p>
-              <div class="modal-action">
-                <form method="dialog">
-                  <!-- if there is a button, it will close the modal -->
-                  <button class="w-14 h-9 border border-black rounded-md bg-violet-400 text-white">Close</button>
-                </form>
+            <button id="btn-donate-quota"  onclick="my_modal_4.showModal()" class="w-full bg-[#B4F461] text-black py-3 rounded-lg  text-xl font-semibold ">
+              Donate Now
+            </button>
+            <dialog id="my_modal_4" class="modal">
+              <div class="modal-box w-11/12 max-w-5xl bg-violet-300">
+                <h3 class="text-3xl font-extrabold text-white text-center">Congratulations !!</h3>
+                <p class="text-2xl font-extrabold text-white text-center py-4">Your Donation Process is Successfully Done. </p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button, it will close the modal -->
+                    <button class="w-14 h-9 border border-black rounded-md bg-violet-400 text-white">Close</button>
+                  </form>
+                </div>
               </div>
-            </div>
-          </dialog>
+            </dialog>
         </div>
       </div>
     </section>

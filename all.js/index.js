@@ -46,7 +46,9 @@ document.getElementById('btn-donate-quota').addEventListener('click', function (
     event.preventDefault();
     const donateAmount = document.getElementById('donate-amount-quota').value;
     const mainInitial = document.getElementById('main-initial').innerText;
-
+     if(parseFloat(donateAmount)<=0 || isNaN(parseFloat(donateAmount)) ){
+        alert('Please Enter Valid Amount !!');
+     }
     const totalPresent = parseFloat(mainInitial) - parseFloat(donateAmount);
 
     const quotaBeforeDonate = document.getElementById('quota-total-donate').innerText;

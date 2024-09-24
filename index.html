@@ -146,9 +146,22 @@
           </p>
           <input id="donate-amount-quota" type="text" placeholder="Write Donation Amount"
             class="w-full bg-[#FFFFFF] p-3 border border-gray-300 rounded-lg mb-4">
-          <button id="btn-donate-quota" class="w-full bg-[#B4F461] text-black py-3 rounded-lg  text-xl font-semibold ">
+
+          <button id="btn-donate-quota"  onclick="my_modal_4.showModal()" class="w-full bg-[#B4F461] text-black py-3 rounded-lg  text-xl font-semibold ">
             Donate Now
           </button>
+          <dialog id="my_modal_4" class="modal">
+            <div class="modal-box w-11/12 max-w-5xl bg-violet-300">
+              <h3 class="text-3xl font-extrabold text-white text-center">Congratulations !!</h3>
+              <p class="text-2xl font-extrabold text-white text-center py-4">Your Donation Process is Successfully Done. </p>
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button, it will close the modal -->
+                  <button class="w-14 h-9 border border-black rounded-md bg-violet-400 text-white">Close</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
         </div>
       </div>
     </section>

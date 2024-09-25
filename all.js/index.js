@@ -38,7 +38,7 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
     // history adding 
     const history=document.createElement('div');
     const bdTime = new Date().toLocaleString('en-US', { timeZone: 'Asia/Dhaka', hour12: true });
-    history.innerHTML=` <div class="w-[1024px] mx-auto p-6 bg-white border border-[#1111111A] rounded-lg   items-center space-x-4 mb-6">
+    history.innerHTML=` <div class="w-[400px] lg:w-[1024px] mx-auto p-6 bg-white border border-[#1111111A] rounded-lg   items-center space-x-4 mb-6">
         
           <p class="text-black font-normal text-lg"><span class="quota-tk"></span> Taka is Donated for Flood Relief in Noakhali,Bangladesh</p> <br>
               <p class="text-black font-normal text-lg">Time: ${bdTime}</p> 
@@ -74,7 +74,7 @@ document.getElementById('btn-donate-feni').addEventListener('click', function (e
     // history adding 
     const history=document.createElement('div');
     const bdTime = new Date().toLocaleString('en-US', { timeZone: 'Asia/Dhaka', hour12: true });
-    history.innerHTML=` <div class="w-[1024px] mx-auto p-6 bg-white border border-[#1111111A] rounded-lg   items-center space-x-4 mb-6">
+    history.innerHTML=` <div class="w-[400px] lg:w-[1024px] mx-auto p-6 bg-white border border-[#1111111A] rounded-lg   items-center space-x-4 mb-6">
         
           <p class="text-black font-normal text-lg"><span class="quota-tk"></span> Taka is Donated for Flood Relief in Feni,Bangladesh</p> <br>
               <p class="text-black font-normal text-lg">Time: ${bdTime}</p> 
@@ -110,7 +110,7 @@ document.getElementById('btn-donate-quota').addEventListener('click', function (
         // history adding 
         const history=document.createElement('div');
         const bdTime = new Date().toLocaleString('en-US', { timeZone: 'Asia/Dhaka', hour12: true });
-        history.innerHTML=` <div class="w-[1024px] mx-auto p-6 bg-white border border-[#1111111A] rounded-lg   items-center space-x-4 mb-6">
+        history.innerHTML=` <div class="w-[400px] lg:w-[1024px] mx-auto p-6 bg-white border border-[#1111111A] rounded-lg   items-center space-x-4 mb-6">
             
               <p class="text-black font-normal text-lg"><span class="quota-tk"></span> Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p> <br>
                   <p class="text-black font-normal text-lg">Time: ${bdTime}</p> 

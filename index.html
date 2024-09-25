@@ -42,9 +42,9 @@
 
   <!-- header section -->
   <header class="fixed top-0 w-full left-0   pb-4  ">
-    <div class=" flex justify-between items-center w-full h-24 px-4 bg-[#F9F7F3]">
+    <div class="sm:flex  justify-between items-center w-full h-44 lg:h-24 px-4 bg-[#F9F7F3]">
       <!-- blog button  -->
-      <div class="flex items-center space-x-2">
+      <div class="flex items-center space-x-2 py-2">
 
         <button id="blog-button" class="bg-lime-400 text-black py-2 px-4 rounded-md font-semibold"><a
             href="/blog.html">Blog</a></button>
@@ -52,12 +52,12 @@
       </div>
 
       <!-- Donate BAngladesh  -->
-      <div class="flex items-center space-x-1">
+      <div class="flex  items-center space-x-1 py-2">
         <img class="w-12 h-12" src="assets/logo.png" alt="">
-        <p class="text-xl font-semibold text-[#111111] pl-2">Donate Bangladesh </p>
+        <p class="text-2xl font-semibold text-[#111111] pl-2">Donate Bangladesh </p>
       </div>
       <!-- donation Amount -->
-      <div class="flex items-center space-x-1">
+      <div class="flex items-center space-x-1 py-2">
         <img class="w-7 h-7 mr-3" src="assets/coin.png" alt="">
         <p id="main-initial" class="font-medium text-xl text-[#111111B3]">5500</p>
         <p class="font-medium text-xl pl-[5px] text-[#111111B3] "> BDT</p>
@@ -78,13 +78,13 @@
 
   </header>
 
-  <main class="overflow-y-auto pt-[190px] h-full flex flex-col justify-center items-center bg-white ">
+  <main class="overflow-y-auto pt-[260px] lg:pt-[190px] h-full flex flex-col justify-center items-center bg-white ">
     <section id="donation-container">
 
       <!-- Noakhali card  -->
-      <div class="w-[1024px] mx-auto p-6 bg-white border border-[#1111111A] rounded-lg sm:flex  items-center space-x-4">
+      <div class="lg:w-[1024px] mx-auto p-6 mb-2 bg-white border border-[#1111111A] rounded-lg flex flex-col lg:flex-row  items-center space-x-4">
         <img src="assets/noakhali.png" alt="" class="w-1/2 rounded-lg">
-        <div class="w-1/2">
+        <div class="w-1/2 mt-2 lg:mt-0">
           <div class="flex py-3 bg-[#1111110D] px-3 w-32 rounded-lg h-[44px]">
             <img class="w-5 h-5 mr-3" src="assets/coin.png" alt="">
             <p id="noakhali-total-donate" class="font-normal text-base text-[#111111B3]">0</p>
@@ -104,7 +104,7 @@
 
           <button id="btn-donate-noakhali"
             class=" w-full bg-[#B4F461] text-black py-3 rounded-lg  text-xl font-semibold "
-            onclick="my_modal_3.showModal()">open modal</button>
+            onclick="my_modal_3.showModal()">Donate Now</button>
           <dialog id="my_modal_3" class="modal">
             <div class="bg-purple-300 modal-box">
               <form method="dialog">
@@ -119,9 +119,9 @@
       </div>
       <!-- feni card  -->
       <div
-        class="w-[1024px] mx-auto p-6 bg-white border border-[#1111111A] rounded-lg sm:flex  items-center space-x-4 my-6">
+        class=" lg:w-[1024px] mx-auto p-6 mb-2 bg-white border border-[#1111111A] rounded-lg flex flex-col lg:flex-row  items-center space-x-4">
         <img src="assets/feni.png" alt="" class="w-1/2 rounded-lg">
-        <div class="w-1/2">
+        <div class="w-1/2 mt-2 lg:mt-0">
           <div class="flex py-3 bg-[#1111110D] px-3 w-32 rounded-lg h-[44px]">
             <img class="w-5 h-5 mr-3" src="assets/coin.png" alt="">
             <p id="feni-total-donate" class="font-normal text-base text-[#111111B3]">0 </p>
@@ -139,7 +139,7 @@
 
 
           <button id="btn-donate-feni" class=" w-full bg-[#B4F461] text-black py-3 rounded-lg  text-xl font-semibold "
-            onclick="my_modal_2.showModal()">open modal</button>
+            onclick="my_modal_2.showModal()">Donate Now</button>
           <dialog id="my_modal_2" class="modal">
             <div class="bg-purple-300 modal-box">
               <form method="dialog">
@@ -153,9 +153,9 @@
       </div>
       <!-- quota movement  -->
       <div
-        class="w-[1024px] mx-auto p-6 bg-white border border-[#1111111A] rounded-lg sm:flex  items-center space-x-4 mb-6">
+        class="lg:w-[1024px] mx-auto p-6 mb-2 bg-white border border-[#1111111A] rounded-lg flex flex-col lg:flex-row  items-center space-x-4">
         <img src="assets/quota-protest.png" alt="" class="w-1/2 rounded-lg">
-        <div class="w-1/2">
+        <div class="w-1/2 mt-2 lg:mt-0">
           <div class="flex py-3 bg-[#1111110D] px-3 w-32 rounded-lg h-[44px]">
             <img class="w-5 h-5 mr-3" src="assets/coin.png" alt="">
             <p id="quota-total-donate" class="font-normal text-base text-[#111111B3]">0</p>
@@ -174,7 +174,7 @@
 
 
           <button id="btn-donate-quota" class=" w-full bg-[#B4F461] text-black py-3 rounded-lg  text-xl font-semibold "
-            onclick="my_modal_4.showModal()">open modal</button>
+            onclick="my_modal_4.showModal()">Donate Now</button>
           <dialog id="my_modal_4" class="modal">
             <div class="bg-purple-300 modal-box">
               <form method="dialog">

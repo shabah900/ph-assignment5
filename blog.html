@@ -39,22 +39,22 @@
 
   <!-- header section -->
   <header class="fixed top-0 w-full left-0   pb-4  ">
-    <div class=" flex justify-between items-center w-full h-24 px-4 bg-[#F9F7F3]">
+    <div class="sm:flex  justify-between items-center w-full h-44 lg:h-24 px-4 bg-[#F9F7F3]">
       <!-- blog button  -->
-      <div class="flex items-center space-x-2">
+      <div class="flex items-center space-x-2 py-2">
 
         <button id="blog-button" class="bg-lime-400 text-black py-2 px-4 rounded-md font-semibold"><a
-            href="/blog.html">Blog</a></button>
+            href="/index.html">Home</a></button>
 
       </div>
 
       <!-- Donate BAngladesh  -->
-      <div class="flex items-center space-x-1">
+      <div class="flex items-center space-x-1 py-2">
         <img class="w-12 h-12" src="assets/logo.png" alt="">
         <p class="text-xl font-semibold text-[#111111] pl-2">Donate Bangladesh </p>
       </div>
       <!-- donation Amount -->
-      <div class="flex items-center space-x-1">
+      <div class="flex items-center space-x-1 py-2">
         <img class="w-7 h-7 mr-3" src="assets/coin.png" alt="">
         <p id="main-initial" class="font-medium text-xl text-[#111111B3]">5500</p>
         <p class="font-medium text-xl pl-[5px] text-[#111111B3] "> BDT</p>
@@ -64,10 +64,11 @@
     <!--  donation and history button -->
 
     <div class=" flex justify-center space-x-4 mb-4 mt-[20px]">
-      <button class="bg-lime-400 text-black py-3 px-6 rounded-md font-semibold">
+      <button
+      id="green-donation-blog" onclick="hideDiv('donation-container','history-container','green-donation-blog','green-history-blog')"  class="bg-lime-400 text-black py-3 px-6 rounded-md font-semibold">
         Donation
       </button>
-      <button class="bg-white text-black py-3 px-6 rounded-md border border-[#1111114D] font-semibold">
+      <button   id="green-history-blog"  onclick="hideDiv('history-container','donation-container','green-history-blog','green-donation-blog')"  class="bg-white text-black py-3 px-6 rounded-md border border-[#1111114D] font-semibold">
         History
       </button>
     </div>
@@ -75,13 +76,47 @@
 
   </header>
 
-  <main class="overflow-y-auto pt-[190px] h-full flex flex-col justify-center items-center bg-white ">
+  <main class="overflow-y-auto pt-[260px] lg:pt-[190px] h-full flex flex-col justify-center items-center bg-white ">
 
-    <!-- section for history -->
+  
     <section >
+      <h1 class="text-4xl text-black font-extrabold mb-5">Important FAQ <span></span></h1>
       <div
-        class="w-[1024px] mx-auto p-6 bg-white border border-[#1111111A] rounded-lg   items-center space-x-4 mb-6">
-             
+        class="w-[400px] lg:w-[1024px] mx-auto p-6 bg-white border border-[#1111111A] rounded-lg   items-center space-x-4 mb-6">
+          <p class="text-xl font-semibold text-black">What is the Document Object Model (DOM)?</p>
+          <p><span class="text-xl font-semibold text-black">Ans : </span>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a webpage as a tree of objects, allowing programming languages like JavaScript to access, manipulate, and modify the content, structure, and style of the page dynamically.
+          </p>   
+            
+      </div>
+      <div
+        class="w-[400px] lg:w-[1024px] mx-auto p-6 bg-white border border-[#1111111A] rounded-lg   items-center space-x-4 mb-6">
+          <p class="text-xl font-semibold text-black"> How do you select an element from the DOM?</p>
+          <p><span class="text-xl font-semibold text-black">Ans : </span> We can select elements from the DOM using JavaScript methods such as:</p>
+
+            <p> 1.document.getElementById('id') – Selects an element by its ID.
+            </p>
+           <p> 2.document.querySelector('selector') – Selects the first element that matches a CSS selector.</p>
+            
+            <p>3.document.getElementsByClassName('class') – Selects elements by their class name.</p>
+               
+            
+      </div>
+      <div
+        class="w-[400px] lg:w-[1024px] mx-auto p-6 bg-white border border-[#1111111A] rounded-lg   items-center space-x-4 mb-6">
+          <p class="text-xl font-semibold text-black">What is event delegation in the context of the DOM, and why is it useful?</p>
+          <p><span class="text-xl font-semibold text-black">Ans : </span> Event delegation is a technique in the DOM where a single event listener is attached to a parent element to handle events triggered by its child elements. This is useful because it allows for better performance and cleaner code, especially when dynamically adding or removing elements. 
+          </p>   
+            
+      </div>
+      <div
+        class="w-[400px] lg:w-[1024px] mx-auto p-6 bg-white border border-[#1111111A] rounded-lg   items-center space-x-4 mb-6">
+          <p class="text-xl font-semibold text-black">How do you manipulate an element's attributes and styles using the DOM?</p>
+          <p><span class="text-xl font-semibold text-black">Ans : </span>For attributes: element.setAttribute('attribute', 'value') or directly through properties like element.src for images or element.href for links.
+
+            For styles: You can use element.style.property = 'value', for example, element.style.color = 'red' to change the text color.
+            
+            
+          </p>   
             
       </div>
     </section>
